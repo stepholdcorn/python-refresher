@@ -97,3 +97,18 @@ def average_of_array(my_list):
     count += item
   return int(round(float(count)/len(my_list)))
 
+def get_elements_until_greater_than_five(my_list):
+  location = my_list.index(6)
+  return my_list[:location]
+
+def get_all_letters_in_array_of_words(my_list):
+  result = []
+  for item in my_list:
+    item = list(item)
+    for i in item:
+      result.append(i)
+  return sorted(result)
+
+def remove_capital_letters_from_string(string):
+  return string.translate(None, 'ABCDEFGHIJKLMNOPQRSTUVWXYZ')
+

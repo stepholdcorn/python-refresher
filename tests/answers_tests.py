@@ -54,9 +54,14 @@ def test_double_array():
 def test_average_of_array():
   assert_equal(answers.average_of_array([10, 15, 25]), 17)
 
+def test_get_elements_until_greater_than_five():
+  assert_equal(answers.get_elements_until_greater_than_five([1, 3, 5, 4, 1, 2, 6, 2, 1, 3, 7]), [1, 3, 5, 4, 1, 2])
 
-
-
+def test_get_all_letters_in_array_of_words():
+  assert_equal(answers.get_all_letters_in_array_of_words(['cat', 'dog', 'fish']), ['a', 'c', 'd', 'f', 'g', 'h', 'i', 'o', 's', 't'])
+  
+def test_remove_capital_letters_from_string():
+  assert_equal(answers.remove_capital_letters_from_string('Hello JohnDoe'), 'ello ohnoe')
 
 
 
