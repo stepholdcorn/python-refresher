@@ -134,3 +134,9 @@ def titleize_a_string(string):
     else:
       result.append(item)
   return ' '.join(result)
+
+def square_root_of(number):
+  return number**0.5
+
+
+

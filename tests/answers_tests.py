@@ -75,5 +75,6 @@ def test_get_domain_name_from_email_address():
 def test_titleize_a_string():
   assert_equal(answers.titleize_a_string('the lion the witch and the wardrobe'), 'The Lion the Witch and the Wardrobe')
 
-
-
+def test_square_root_of():
+  assert_equal(answers.square_root_of(9), 3.0)
+  assert_equal(answers.square_root_of(3), 1.7320508075688772)
