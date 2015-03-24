@@ -17,3 +17,14 @@ def remove_nils_from_array(my_list):
   for item in my_list:
     if item != None: result.append(item)
   return result
+
+def remove_nils_and_false_from_array(my_list):
+  result = []
+  for item in my_list:
+    if item != None and item != False: result.append(item)
+  return result
+
+def reverse_every_element_in_array(my_list):
+  result = []
+  for item in my_list: result.append(item[::-1])
+  return result

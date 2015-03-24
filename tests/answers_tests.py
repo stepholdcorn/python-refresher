@@ -9,3 +9,9 @@ def test_select_elements_starting_with_vowel():
 
 def test_remove_nils_from_array():
   assert_equal(answers.remove_nils_from_array(['a', 'b', None, None, False, 'c', None]), ['a', 'b', False, 'c'])
+
+def test_remove_nils_and_false_from_array():
+  assert_equal(answers.remove_nils_and_false_from_array(['a', 'b', None, None, False, 'c', None]), ['a', 'b', 'c'])
+
+def test_reverse_every_element_in_array():
+  assert_equal(answers.reverse_every_element_in_array(['dog', 'monkey', 'elephant']), ['god', 'yeknom', 'tnahpele'])
