@@ -120,4 +120,17 @@ def round_up_number(number):
 def round_down_number(number):
   return math.floor(number)
 
+def get_domain_name_from_email_address(email_address):
+  location1 = email_address.index('@') + 1
+  location2 = email_address.index('.')
+  return email_address[location1:location2]
 
+def titleize_a_string(string):
+  result = []
+  string_list = string.capitalize().split(' ')
+  for item in string_list:
+    if len(item) > 3:
+      result.append(item.capitalize())
+    else:
+      result.append(item)
+  return ' '.join(result)

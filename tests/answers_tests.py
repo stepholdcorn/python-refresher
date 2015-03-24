@@ -69,8 +69,11 @@ def test_round_up_number():
 def test_round_down_number():
   assert_equal(answers.round_down_number(4.9), 4)
 
+def test_get_domain_name_from_email_address():
+  assert_equal(answers.get_domain_name_from_email_address('alex@makersacademy.com'), 'makersacademy')
 
-
+def test_titleize_a_string():
+  assert_equal(answers.titleize_a_string('the lion the witch and the wardrobe'), 'The Lion the Witch and the Wardrobe')
 
 
 
