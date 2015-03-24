@@ -81,3 +81,19 @@ def longest_word_in_array(my_list):
       length = len(word)
       longest = word
   return longest
+
+def total_of_array(my_list):
+  count = 0
+  for item in my_list:
+    count += item
+  return count 
+
+def double_array(my_list):
+  return my_list + my_list
+
+def average_of_array(my_list):
+  count = 0
+  for item in my_list:
+    count += item
+  return int(round(float(count)/len(my_list)))
+

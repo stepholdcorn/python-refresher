@@ -44,3 +44,24 @@ def test_shortest_word_in_array():
 
 def test_longest_word_in_array():
   assert_equal(answers.longest_word_in_array(['here', 'is', 'a', 'bunch', 'of', 'words', 'of', 'different', 'lengths']), 'different')
+
+def test_total_of_array():
+  assert_equal(answers.total_of_array([1, 3, 5, 6, 2, 8]), 25)
+
+def test_double_array():
+  assert_equal(answers.double_array([1, 2, 3]), [1, 2, 3, 1, 2, 3])
+
+def test_average_of_array():
+  assert_equal(answers.average_of_array([10, 15, 25]), 17)
+
+
+
+
+
+
+
+
+
+
+
+
