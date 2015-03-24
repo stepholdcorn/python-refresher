@@ -66,4 +66,18 @@ def number_of_elements_that_are_palindromes(my_list):
       count +=1
   return count
 
+def shortest_word_in_array(my_list):
+  length = 100
+  for word in my_list:
+    if len(word) < length: 
+      length = len(word)
+      shortest = word
+  return shortest
 
+def longest_word_in_array(my_list):
+  length = 0
+  for word in my_list:
+    if len(word) > length:
+      length = len(word)
+      longest = word
+  return longest

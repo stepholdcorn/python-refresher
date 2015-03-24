@@ -38,3 +38,9 @@ def test_separate_array_into_even_and_odd_numbers():
 
 def test_number_of_elements_that_are_palindromes():
   assert_equal(answers.number_of_elements_that_are_palindromes(['bob', 'radar', 'alex', 'noon', 'banana']), 3)
+
+def test_shortest_word_in_array():
+  assert_equal(answers.shortest_word_in_array(['here', 'is', 'a', 'bunch', 'of', 'words', 'of', 'different', 'lengths']), 'a')
+
+def test_longest_word_in_array():
+  assert_equal(answers.longest_word_in_array(['here', 'is', 'a', 'bunch', 'of', 'words', 'of', 'different', 'lengths']), 'different')
