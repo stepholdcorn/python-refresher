@@ -63,7 +63,11 @@ def test_get_all_letters_in_array_of_words():
 def test_remove_capital_letters_from_string():
   assert_equal(answers.remove_capital_letters_from_string('Hello JohnDoe'), 'ello ohnoe')
 
+def test_round_up_number():
+  assert_equal(answers.round_up_number(3.142), 4)
 
+def test_round_down_number():
+  assert_equal(answers.round_down_number(4.9), 4)
 
 
 

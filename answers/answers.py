@@ -1,3 +1,5 @@
+import math
+
 def select_elements_starting_with_a(my_list):
   result = []
   for item in my_list:
@@ -111,4 +113,11 @@ def get_all_letters_in_array_of_words(my_list):
 
 def remove_capital_letters_from_string(string):
   return string.translate(None, 'ABCDEFGHIJKLMNOPQRSTUVWXYZ')
+
+def round_up_number(number):
+  return math.ceil(number)
+
+def round_down_number(number):
+  return math.floor(number)
+
 
