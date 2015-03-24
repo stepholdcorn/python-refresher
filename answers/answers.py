@@ -28,3 +28,18 @@ def reverse_every_element_in_array(my_list):
   result = []
   for item in my_list: result.append(item[::-1])
   return result
+
+def all_elements_except_first_3(my_list):
+  return my_list[3:]
+
+def add_element_to_beginning_of_array(my_list, element):
+  my_list.insert(0, element)
+  return my_list
+
+def array_sort_by_last_letter_of_word(my_list):
+  result = []
+  backwards = []
+  for item in my_list: backwards.append(item[::-1])
+  sorted_backwards = sorted(backwards)
+  for item in sorted_backwards: result.append(item[::-1])
+  return result
