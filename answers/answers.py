@@ -43,3 +43,27 @@ def array_sort_by_last_letter_of_word(my_list):
   sorted_backwards = sorted(backwards)
   for item in sorted_backwards: result.append(item[::-1])
   return result
+
+def get_first_half_of_string(string):
+  half_way = int(round(len(string)*0.5))
+  return string[0:half_way]
+
+def make_numbers_negative(integer):
+  return -abs(integer)
+
+def separate_array_into_even_and_odd_numbers(my_list):
+  result= []
+  even = my_list[1::2]
+  odd = my_list[0::2]
+  result.append(even)
+  result.append(odd)
+  return result
+
+def number_of_elements_that_are_palindromes(my_list):
+  count = 0
+  for word in my_list:
+    if word == word[::-1]:
+      count +=1
+  return count
+
+

@@ -24,3 +24,17 @@ def test_add_element_to_beginning_of_array():
 
 def test_array_sort_by_last_letter_of_word():
   assert_equal(answers.array_sort_by_last_letter_of_word(['sky', 'puma', 'maker']), ['puma', 'maker', 'sky'])
+
+def test_get_first_half_of_string():
+  assert_equal(answers.get_first_half_of_string('banana'), 'ban')
+  assert_equal(answers.get_first_half_of_string('apple'), 'app')
+
+def test_make_numbers_negative():
+  assert_equal(answers.make_numbers_negative(5), -5)
+  assert_equal(answers.make_numbers_negative(-7), -7)
+
+def test_separate_array_into_even_and_odd_numbers():
+  assert_equal(answers.separate_array_into_even_and_odd_numbers([1, 2, 3, 4, 5, 6, 7]), [[2, 4, 6], [1, 3, 5, 7]])
+
+def test_number_of_elements_that_are_palindromes():
+  assert_equal(answers.number_of_elements_that_are_palindromes(['bob', 'radar', 'alex', 'noon', 'banana']), 3)
