@@ -138,5 +138,14 @@ def titleize_a_string(string):
 def square_root_of(number):
   return number**0.5
 
+def word_count_a_file(file_path):
+  count = 0
+  document = open(file_path, 'r')
+  words = document.read().split(' ')
+  for item in words:
+    count += 1
+  document.close()
+  return count
+
 
 

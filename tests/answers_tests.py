@@ -78,3 +78,6 @@ def test_titleize_a_string():
 def test_square_root_of():
   assert_equal(answers.square_root_of(9), 3.0)
   assert_equal(answers.square_root_of(3), 1.7320508075688772)
+
+def test_word_count_a_file():
+  assert_equal(answers.word_count_a_file('data/lorem.txt'), 70)
