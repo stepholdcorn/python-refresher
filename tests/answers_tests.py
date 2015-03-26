@@ -81,3 +81,6 @@ def test_square_root_of():
 
 def test_word_count_a_file():
   assert_equal(answers.word_count_a_file('data/lorem.txt'), 70)
+
+def test_add_together_keys_and_values():
+  assert_equal(answers.add_together_keys_and_values({1: 1, 2: 2}), 6)
