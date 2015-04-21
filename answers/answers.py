@@ -150,4 +150,9 @@ def word_count_a_file(file_path):
   return count
 
 def add_together_keys_and_values(dictionary):
-  pass
+  count = 0
+  for key in dictionary:
+    count += key
+  for value in dictionary.values():
+    count += value
+  return count
