@@ -141,7 +141,13 @@ def square_root_of(number):
   return number**0.5
 
 def word_count_a_file(file_path):
-  pass
+  count = 0
+  document = open(file_path, 'r')
+  words = document.read().split(' ')
+  for word in words:
+    count += 1
+  document.close()
+  return count
 
 def add_together_keys_and_values(dictionary):
   pass
