@@ -65,7 +65,10 @@ def separate_array_into_even_and_odd_numbers(my_list):
   return result
 
 def number_of_elements_that_are_palindromes(my_list):
-  pass
+  count = 0
+  for item in my_list:
+    if item == item[::-1]: count +=1
+  return count
 
 def shortest_word_in_array(my_list):
   length = 100
