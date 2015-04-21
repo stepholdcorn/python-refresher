@@ -79,7 +79,12 @@ def shortest_word_in_array(my_list):
   return shortest
 
 def longest_word_in_array(my_list):
-  pass
+  count = 0
+  for item in my_list:
+    if len(item) > count:
+      count = len(item)
+      longest_word = item
+  return longest_word
 
 def total_of_array(my_list):
   count = 0
