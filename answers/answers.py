@@ -7,12 +7,6 @@ def select_elements_starting_with_a(my_list):
   return result
 
 def select_elements_starting_with_vowel(my_list):
-  result = []
-  vowel = list('aeiou')
-  for item in my_list:
-    for letter in vowel:
-      if item.startswith(letter): result.append(item)
-  return result
 
 def remove_nils_from_array(my_list):
   result = []
@@ -21,15 +15,8 @@ def remove_nils_from_array(my_list):
   return result
 
 def remove_nils_and_false_from_array(my_list):
-  result = []
-  for item in my_list:
-    if item != None and item != False: result.append(item)
-  return result
 
 def reverse_every_element_in_array(my_list):
-  result = []
-  for item in my_list: result.append(item[::-1])
-  return result
 
 def all_elements_except_first_3(my_list):
   return my_list[3:]
@@ -39,12 +26,6 @@ def add_element_to_beginning_of_array(my_list, element):
   return my_list
 
 def array_sort_by_last_letter_of_word(my_list):
-  result = []
-  backwards = []
-  for item in my_list: backwards.append(item[::-1])
-  sorted_backwards = sorted(backwards)
-  for item in sorted_backwards: result.append(item[::-1])
-  return result
 
 def get_first_half_of_string(string):
   half_way = int(round(len(string)*0.5))
@@ -62,11 +43,6 @@ def separate_array_into_even_and_odd_numbers(my_list):
   return result
 
 def number_of_elements_that_are_palindromes(my_list):
-  count = 0
-  for word in my_list:
-    if word == word[::-1]:
-      count +=1
-  return count
 
 def shortest_word_in_array(my_list):
   length = 100
@@ -77,12 +53,6 @@ def shortest_word_in_array(my_list):
   return shortest
 
 def longest_word_in_array(my_list):
-  length = 0
-  for word in my_list:
-    if len(word) > length:
-      length = len(word)
-      longest = word
-  return longest
 
 def total_of_array(my_list):
   count = 0
@@ -139,20 +109,5 @@ def square_root_of(number):
   return number**0.5
 
 def word_count_a_file(file_path):
-  count = 0
-  document = open(file_path, 'r')
-  words = document.read().split(' ')
-  for item in words:
-    count += 1
-  document.close()
-  return count
 
 def add_together_keys_and_values(dictionary):
-  count = 0
-  for key in dictionary:
-    count += key
-  for value in dictionary.values():
-    count += value
-  return count
-
-
