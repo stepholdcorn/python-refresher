@@ -27,7 +27,10 @@ def remove_nils_and_false_from_array(my_list):
   return result
 
 def reverse_every_element_in_array(my_list):
-  pass
+  result = []
+  for item in my_list:
+    result.append(item[::-1])
+  return result
 
 def all_elements_except_first_3(my_list):
   return my_list[3:]
