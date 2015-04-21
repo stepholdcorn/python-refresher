@@ -7,6 +7,12 @@ def select_elements_starting_with_a(my_list):
   return result
 
 def select_elements_starting_with_vowel(my_list):
+  result = []
+  vowels = list('aeiou')
+  for name in my_list:
+    for vowel in vowels:
+      if name.startswith(vowel): result.append(name)
+  return result
 
 def remove_nils_from_array(my_list):
   result = []
@@ -15,8 +21,10 @@ def remove_nils_from_array(my_list):
   return result
 
 def remove_nils_and_false_from_array(my_list):
+  pass
 
 def reverse_every_element_in_array(my_list):
+  pass
 
 def all_elements_except_first_3(my_list):
   return my_list[3:]
@@ -26,6 +34,7 @@ def add_element_to_beginning_of_array(my_list, element):
   return my_list
 
 def array_sort_by_last_letter_of_word(my_list):
+  pass
 
 def get_first_half_of_string(string):
   half_way = int(round(len(string)*0.5))
@@ -43,6 +52,7 @@ def separate_array_into_even_and_odd_numbers(my_list):
   return result
 
 def number_of_elements_that_are_palindromes(my_list):
+  pass
 
 def shortest_word_in_array(my_list):
   length = 100
@@ -53,6 +63,7 @@ def shortest_word_in_array(my_list):
   return shortest
 
 def longest_word_in_array(my_list):
+  pass
 
 def total_of_array(my_list):
   count = 0
@@ -109,5 +120,7 @@ def square_root_of(number):
   return number**0.5
 
 def word_count_a_file(file_path):
+  pass
 
 def add_together_keys_and_values(dictionary):
+  pass
