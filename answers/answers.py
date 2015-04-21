@@ -21,7 +21,10 @@ def remove_nils_from_array(my_list):
   return result
 
 def remove_nils_and_false_from_array(my_list):
-  pass
+  result = []
+  for item in my_list:
+    if item != None and item != False: result.append(item)
+  return result
 
 def reverse_every_element_in_array(my_list):
   pass
