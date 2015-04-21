@@ -40,7 +40,14 @@ def add_element_to_beginning_of_array(my_list, element):
   return my_list
 
 def array_sort_by_last_letter_of_word(my_list):
-  pass
+  result = []
+  backwards = []
+  for item in my_list:
+    backwards.append(item[::-1])
+  backwards = sorted(backwards)
+  for item in backwards:
+    result.append(item[::-1])
+  return result
 
 def get_first_half_of_string(string):
   half_way = int(round(len(string)*0.5))
